@@ -36,12 +36,12 @@ Returns True if read was successful, False otherwise.
 Get the most recent temperature measurement.
 
 	sensor.temperature() # Get temperature in default units (Centigrade)
-	sensor.temperature(ms5837.UNITS_Farenheit) # Get temperature in Farenheit
+	sensor.temperature(tsys01.UNITS_Farenheit) # Get temperature in Farenheit
 
 Valid arguments are:
 
 	tsys01.UNITS_Centigrade
-	tsys01.UNITS_Farenheit
+	tsys01.UNITS_Fahrenheit
 	tsys01.UNITS_Kelvin
 
 Returns the most recent temperature in the requested units, or temperature in degrees Centigrade if invalid units specified. Call read() to update.
