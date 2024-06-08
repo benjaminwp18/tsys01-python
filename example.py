@@ -12,5 +12,5 @@ while True:
     if not sensor.read():
         print("Error reading sensor")
         exit(1)
-    print("Temperature: %.2f C\t%.2f F") % (sensor.temperature(), sensor.temperature(tsys01.UNITS_Farenheit))
+    print("Temperature: %.2f C\t%.2f F") % (sensor.temperature(), sensor.temperature(tsys01.UNITS_Fahrenheit))
     sleep(0.2)
