@@ -36,7 +36,7 @@ Returns True if read was successful, False otherwise.
 Get the most recent temperature measurement.
 
 	sensor.temperature() # Get temperature in default units (Centigrade)
-	sensor.temperature(tsys01.UNITS_Farenheit) # Get temperature in Farenheit
+	sensor.temperature(tsys01.UNITS_Fahrenheit) # Get temperature in Fahrenheit
 
 Valid arguments are:
 
