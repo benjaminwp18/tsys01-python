@@ -7,7 +7,7 @@ from time import sleep
 
 # Valid units
 UNITS_Centigrade = 1
-UNITS_Farenheit  = 2
+UNITS_Fahrenheit = 2
 UNITS_Kelvin     = 3
 
     
@@ -73,7 +73,7 @@ class TSYS01(object):
     # Temperature in requested units
     # default degrees C
     def temperature(self, conversion=UNITS_Centigrade):
-        if conversion == UNITS_Farenheit:
+        if conversion == UNITS_Fahrenheit:
             return (9/5) * self._temperature + 32
         elif conversion == UNITS_Kelvin:
             return self._temperature - 273
